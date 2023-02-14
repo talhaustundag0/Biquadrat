@@ -34,6 +34,22 @@ html{
     overflow-x: hidden;
 }
 
+::-webkit-scrollbar{
+    width: 1.2rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color:var(--maincolor);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--textcolor);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #f7ca0f;
+}
+
 body{
     background-color: var(--maincolor);
 }
@@ -330,6 +346,12 @@ h1 span{
     padding-left: 2rem;
     font-size: 1.4rem;
     font-weight: 700;
+}
+
+.portfolio .row-portfolio .box-tester .box-tester-wrapper:hover .box-tester-head{
+    transform: rotate(360deg);
+    padding: 1rem;
+    transition: 1.2s ease;
 }
 
 .container-form h3{
@@ -689,7 +711,7 @@ input::placeholder{
 }
 
 .faq .title2 h2{
-    font-size: 2.6rem;
+    font-size: 2.3rem;
     font-weight: 700;
     color: var(--textcolor);
     margin-bottom: 5rem;
