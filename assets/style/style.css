@@ -87,14 +87,14 @@ body{
 }
 
 .mobileMenu .mobile-menu-body{
-    margin-top: 2.2rem;
+    margin-top: 1rem;
 }
 
 .mobileMenu .mobile-menu-body .btn-menu-items{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
@@ -221,7 +221,7 @@ body{
 .image-left{
     position: absolute;
     z-index: -1;
-    padding-top:17%;
+    padding-top:19%;
     padding-right: 20%;
     max-width: 100%;
     height: auto;
@@ -231,16 +231,11 @@ body{
 .main-container .line{
     position: absolute;
     width: 31%;
-    margin-top: -30px;
+    margin-top: -3rem;
+    margin-left: -0.2rem;
 
 }
 
-.line-responsive{
-    position: relative;
-    width: 100%;
-    padding-left: 35rem;
-    margin-top: -50px;
-}
 
 h1{
     padding-top: 10rem;
@@ -266,9 +261,13 @@ h1 span{
     color:var(--yellowcolor);
 }
 
+.row-portfolio{
+    width: 120%;
+}
+
  .container-form{
     margin-top: 16rem;
-    margin-left: 8rem;
+    margin-left: 13rem;
     width: 34rem;
     height: 45rem;
     background-color: white;
@@ -454,9 +453,9 @@ input::placeholder{
     padding-left: 20rem;
 }
 
+
 .s-page-content{
     width: 45rem;
-    margin-left: 22rem;
 }
 
 .s-page-content .content-p{
@@ -471,7 +470,7 @@ input::placeholder{
 }
 
 .s-page-content .title2{
-    font-size: 2.6rem;
+    font-size: 2.8rem;
     color: var(--textcolor);
     font-weight: 700;
     letter-spacing: normal;
@@ -510,7 +509,7 @@ input::placeholder{
 }
 
 .third-page .title-mobile h2{
-    font-size: 2.6rem;
+    font-size: 2.8rem;
     font-weight: 700;
     color: var(--textcolor);
 }
@@ -571,7 +570,7 @@ input::placeholder{
 }
 
 .stage-2 .title-mobile .title2 h2{
-    font-size: 2.6rem;
+    font-size: 2.8rem;
     font-weight: 700;
     color: var(--textcolor);
 }
@@ -692,7 +691,7 @@ input::placeholder{
     font-size: 2.6rem;
     font-weight: 700;
     color: var(--textcolor);
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .accordion{
@@ -716,7 +715,7 @@ input::placeholder{
 .accordion-area .accordion-item{
     background-color: var(--accordion);
     border-radius: 6rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.8rem;
     border: none;
     width: auto;
 }
@@ -823,6 +822,7 @@ footer img{
 
 }
 
+
 /* Mobile Phone Area Start */
 
 @media (max-width:510px ){
@@ -831,9 +831,24 @@ footer img{
         height: 6rem;
     }
 
-    .header .menu .btn-menu{
-        font-size: 2.4rem;
-        margin-top: 0.2rem;
+    .header{
+        background-color: var(--maincolor);
+        width: 100%;
+        justify-content: space-between!important;
+        margin: 0;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+
+    .title-main{
+        padding-top: 2rem;
+        padding-left: 3rem;
+    }
+
+    .line-responsive .line{
+        display: none;
     }
 
    .header .btn-contact button{
@@ -851,19 +866,12 @@ footer img{
     border-style: solid;
     border-width: 0.2rem;
     cursor: pointer;
-}
-    
-    .line-responsive .line{ 
-        display: block;
-        position: absolute;
-        width: 41%;
-        margin-left: -32rem;
-        margin-top: -2rem;
     }
 
     .main-container .title-mobile h1{
-        font-size: 3.2rem;
+        font-size: 2.8rem;
         margin-top: 1rem;
+        line-height: 3.7rem;
     }
 
     .portfolioMobile{
@@ -872,28 +880,21 @@ footer img{
 
     .s-page{
         margin-top:1rem;
-        
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .s-page-content{
         width: 30rem;
-        padding-left: 5rem;
+        padding: 0!important;
     }
 
     .s-page-content p{
         width: 30rem;
     }
 
-    .third-page .title-mobile h2{
-        font-size: 3rem;
-        font-weight: 700;
-        color: var(--textcolor);
-        width: 100%;
-    }
-
-    .title-main{
-        padding-top: 2rem;
-        padding-left: 3rem;
+    .container-stage2{
+        margin-top: 5rem;
     }
 
     .third-page{
@@ -913,7 +914,7 @@ footer img{
     }
 
     .faq{
-        margin-top: -50px;
+        margin-top: -30px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -955,13 +956,6 @@ footer img{
     }
 }
 
-@media(max-width:767px){
-    .portfolio{
-        margin-left: 15%;
-    }
-
-}
-
 
 @media (min-width:510px){
     .swiper1{
@@ -973,27 +967,19 @@ footer img{
 
 @media (max-width:912px){
     
-    .line-responsive{
-        display: flex!important;
-        position: absolute;
-        width: 77%;
-        margin-top: -30px;
-
-    }
-
     .portfolioMobile{
         margin-top: -48rem;
     }
 
-    .s-page-content{
-        margin-left: -12rem;
-        padding-top: 2rem;
+    .s-page-image .image-right{
+        width: 90%;
+        margin-left: 60px!important;
     }
 
-    /* .swiper1{
-        display: block;
-        margin-top: 2rem;
-    } */
+    .s-page-content{
+        padding-left: 5rem;
+        padding-top: 2rem;
+    }
 
     .faq{
         padding-left: 5rem;
@@ -1005,7 +991,21 @@ footer img{
     }
 
     .stage-2-row .title-mobile .title2 h2{
-        font-size: 3.6rem;
+        font-size: 2.8rem;
+    }
+
+    .third-page .title h2{
+        font-size: 2.8rem;
+    }
+
+    .container-form{
+        margin-left: 2rem;
+    }
+
+    .line-responsive .line{
+        width: 24%;
+        margin-left: 35rem;
+        margin-top: -5.5rem;
     }
 
 }
