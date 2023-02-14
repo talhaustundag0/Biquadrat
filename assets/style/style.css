@@ -57,10 +57,6 @@ body{
     height: 3.8rem;
     margin-top: -13px;
     margin-left: 2rem;
-    /* margin-top: 0.3rem;
-    padding-top: 0.4rem; */
-    /* position: absolute; */
-    /* margin-left: 2rem; */
 }
 
 .header .menu .btn-menu{
@@ -69,6 +65,7 @@ body{
 }
 
 /* Mobile Menu Start */
+
 .mobileMenu{
     background-color: var(--maincolor);
     font-size: 2.2rem;
@@ -459,6 +456,7 @@ input::placeholder{
 
 .s-page-content{
     width: 45rem;
+    margin-left: 22rem;
 }
 
 .s-page-content .content-p{
@@ -637,12 +635,40 @@ input::placeholder{
     line-height: 2.2rem;
 }
 
-.swiper1 .swiper-button-next{
-    color:var(--textcolor);
+.swiper2{
+    margin-left: 4rem;
+    margin-right: 4rem;
 }
 
-.swiper1 .swiper-button-prev{
-    color: var(--textcolor);
+
+.swiper2 .swiper-wrapper .swiper-box{
+    background-color: var(--grayboxcolor);
+    height: 28rem;
+    border-radius: 1rem;
+}
+
+
+.swiper2 .box-header{
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+.swiper2 .box-header h5{
+    margin-left: 0.3rem;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+}
+
+.swiper2 .box-content{
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+
+.swiper2 .box-content p{
+    font-size: 1.2rem;
+    width: 20rem;
+    color: gray;
+    line-height: 2rem;
 }
 
 /* Swiper Area End */
@@ -797,6 +823,7 @@ footer img{
 
 }
 
+/* Mobile Phone Area Start */
 
 @media (max-width:510px ){
 
@@ -827,12 +854,20 @@ footer img{
 }
     
     .line-responsive .line{ 
-        display: none;
+        display: block;
+        position: absolute;
+        width: 41%;
+        margin-left: -32rem;
+        margin-top: -2rem;
     }
 
     .main-container .title-mobile h1{
         font-size: 3.2rem;
         margin-top: 1rem;
+    }
+
+    .portfolioMobile{
+        margin-top: 0!important;
     }
 
     .s-page{
@@ -842,6 +877,7 @@ footer img{
 
     .s-page-content{
         width: 30rem;
+        padding-left: 5rem;
     }
 
     .s-page-content p{
@@ -855,8 +891,9 @@ footer img{
         width: 100%;
     }
 
-    h1{
+    .title-main{
         padding-top: 2rem;
+        padding-left: 3rem;
     }
 
     .third-page{
@@ -902,7 +939,10 @@ footer img{
     footer .key-button{
         margin-top: 3rem;
     }
+
 }
+
+/* Mobile Phone Area End */
 
 @media(max-width:990px){
     .image-left{
@@ -928,3 +968,46 @@ footer img{
         display: none;
     }
 }
+
+/* iPad Area Start */
+
+@media (max-width:912px){
+    
+    .line-responsive{
+        display: flex!important;
+        position: absolute;
+        width: 77%;
+        margin-top: -30px;
+
+    }
+
+    .portfolioMobile{
+        margin-top: -48rem;
+    }
+
+    .s-page-content{
+        margin-left: -12rem;
+        padding-top: 2rem;
+    }
+
+    /* .swiper1{
+        display: block;
+        margin-top: 2rem;
+    } */
+
+    .faq{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .stage-2-row .title-mobile{
+        margin-top: -2rem;
+    }
+
+    .stage-2-row .title-mobile .title2 h2{
+        font-size: 3.6rem;
+    }
+
+}
+
+/* iPad Area End */
