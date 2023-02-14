@@ -874,6 +874,10 @@ footer img{
         display: none;
     }
 
+    .header .btn-contact{
+        padding-right: 1rem;
+    }
+
    .header .btn-contact button{
     display: inline-block;
     background-color: #f7ca0f;
