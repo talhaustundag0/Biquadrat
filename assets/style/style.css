@@ -1,0 +1,930 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+
+
+/* Root */
+
+*{
+    font-family: "Inter";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+:root{
+    --maincolor:#ab9cc2;
+    --yellowcolor:#f6f30f;
+    --boxcolor:#e7dafe;
+    --textcolor:#3a2653;
+    --grayboxcolor:#f3f5f7;
+    --accordion:#bcaad6;
+}
+
+
+/* End Root */
+/* Base Html codes */
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: var(--maincolor);
+}
+
+/* Header Start */
+
+.title-mobile span{
+    color: var(--yellowcolor);
+}
+
+.title-mobile{
+    margin-bottom: 3rem;
+}
+
+
+.menu button{
+    background-color: var(--maincolor);
+    color: var(--textcolor);
+    font-size: 3.8rem;
+    width: 3.8rem;
+    height: 3.8rem;
+    margin-top: -13px;
+    margin-left: 2rem;
+    /* margin-top: 0.3rem;
+    padding-top: 0.4rem; */
+    /* position: absolute; */
+    /* margin-left: 2rem; */
+}
+
+.header .menu .btn-menu{
+    font-size: 2.4rem;
+    margin-top: 0.1rem;
+}
+
+/* Mobile Menu Start */
+.mobileMenu{
+    background-color: var(--maincolor);
+    font-size: 2.2rem;
+}
+
+.mobileMenu .offcanvas-header{
+    background-color: var(--maincolor);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.mobileMenu .offcanvas-header img{
+    object-fit: cover;
+}
+
+.mobileMenu .offcanvas-header button{
+    background-color: var(--maincolor);
+    color: var(--textcolor);
+    font-size: 2rem;
+}
+
+.mobileMenu .mobile-menu-body{
+    margin-top: 2.2rem;
+}
+
+.mobileMenu .mobile-menu-body .btn-menu-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.mobileMenu .mobile-menu-body .btn-menu-items {
+    background-color: var(--maincolor);
+}
+
+.mobileMenu .mobile-menu-body .btn-menu-items a{
+    color: var(--textcolor);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.mobileMenu .mobile-menu-body .btn-menu-items a:hover{
+    color:#f7ca0f;
+    transition: 0.4s ease;
+}
+
+
+.mobileMenu .contact-btn button{
+    display: inline-block;
+    background-color: #f7ca0f;
+    width: 100%;
+    height: 4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 30rem;
+    margin-top: 1rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.2rem;
+    cursor: pointer;
+}
+
+.mobileMenu .contact-btn button:hover{
+    background-color: #3a2653;
+    color:aliceblue;
+    border-color: aliceblue;
+    transition: 0.4s ease;
+}
+
+.offcanvas {
+    max-width: 60%!important;
+}
+
+/* Mobile Menu End */
+
+.logo img{
+    height: 8rem;
+}
+
+.header{
+    background-color: var(--maincolor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 27%;
+}
+
+.header .navbar a{
+    margin: 0 2rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--textcolor);
+    padding-top: 1rem;
+}
+
+.header .navbar a:hover{
+    color: var(--yellowcolor);
+    transition: 0.3s ease;
+}
+
+.header .btn-contact button{
+    display: inline-block;
+    background-color: #f7ca0f;
+    width: 12rem;
+    height: 4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 30rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.2rem;
+    cursor: pointer;
+}
+
+.header .btn-contact button:hover{
+    background-color: #3a2653;
+    color:aliceblue;
+    border-color: aliceblue;
+    transition: 0.4s ease;
+}
+
+.btn-close{
+    font-size: 2rem;
+    background-color: white;
+}
+
+.offcanvas-header{
+    background-color: var(--textcolor);
+}
+
+.offcanvas-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+}
+
+
+
+/* Header End */
+
+/* Body Section Start */
+
+.image-left{
+    position: absolute;
+    z-index: -1;
+    padding-top:17%;
+    padding-right: 20%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.main-container .line{
+    position: absolute;
+    width: 31%;
+    margin-top: -30px;
+
+}
+
+.line-responsive{
+    position: relative;
+    width: 100%;
+    padding-left: 35rem;
+    margin-top: -50px;
+}
+
+h1{
+    padding-top: 10rem;
+    font-size: 4rem;
+    color: var(--textcolor);
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.subtext{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--textcolor);
+    text-transform: capitalize;
+}
+
+ .subtext span{
+    color: black;
+    font-weight: 800;
+}
+
+h1 span{
+    color:var(--yellowcolor);
+}
+
+ .container-form{
+    margin-top: 16rem;
+    margin-left: 8rem;
+    width: 34rem;
+    height: 45rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.container-form2{
+    margin-top: 2rem;
+    width: 34rem;
+    height: 45rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.container-form2 h3{
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--textcolor);
+}
+
+.container-form2 h6{
+    color: gray;
+}
+
+.container-form2 .btn-submit{
+    background-color: #f6f30f;
+    height: 4.5rem;
+    border-radius: 3rem;
+    border: 2px;
+    border-style: solid;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.container-form2 .btn-submit:hover{
+    background-color: var(--textcolor);
+    color: white;
+    border-color: gray;
+    transition: 0.3s ease;
+}
+
+.box-tester .box-tester-footer .box-tester-price,
+.portfolioMobile .box-tester-wrapper .box-tester-footer .box-tester-price{
+    color: var(--yellowcolor);
+    padding-right:2.9rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.box-tester .box-tester-wrapper .box-tester-description,
+.portfolioMobile .box-tester-wrapper .box-tester-description{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.box-tester .box-tester-footer .box-tester-category,
+.portfolioMobile .box-tester-wrapper .box-tester-footer .box-tester-category{
+    padding-left: 2rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.container-form h3{
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #3a2653;
+}
+
+.container-form h6{
+    font-size: 1rem;
+    font-weight: 400;
+    color: gray;
+}
+
+.container-form .form-control{
+    font-size: 1.3rem;
+    color: gray;
+}
+
+.container-form .form-select{
+    font-size: 1.3rem;
+    color: gray;
+}
+
+input::placeholder{
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+
+.container-form .btn-submit{
+    background-color: #f6f30f;
+    height: 4.5rem;
+    border-radius: 3rem;
+    border: 2px;
+    border-style: solid;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.container-form .btn-submit:hover{
+    background-color: var(--textcolor);
+    color: white;
+    border-color: gray;
+    transition: 0.3s ease;
+}
+
+.container-form .form-select {
+    font-size: 1.2rem
+}
+
+/* Modal Form Area Start */
+.modal-form{
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.modal-form .close-btn{
+    position: absolute;
+    margin-left: 34rem;
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+.modal-form .form{
+    padding: 3rem;
+    height:45rem;
+    width: 40rem;
+    border-radius: 2rem;
+    background-color: white;
+}
+
+.modal-form h3{
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #3a2653;
+}
+
+.modal-form h6{
+    font-size: 1rem;
+    font-weight: 400;
+    color: gray;
+}
+
+.modal-form .form-control{
+    font-size: 1.3rem;
+    color: gray;
+}
+
+.modal-form .form-select{
+    font-size: 1.3rem;
+    color: gray;
+}
+
+input::placeholder{
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+
+
+.modal-form .btn-submit{
+    background-color: #f6f30f;
+    height: 4.5rem;
+    border-radius: 3rem;
+    border: 2px;
+    border-style: solid;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.modal-form .btn-submit:hover{
+    background-color: var(--textcolor);
+    color: white;
+    border-color: gray;
+    transition: 0.3s ease;
+}
+/* Modal Form Area End */
+
+/* Second Page Start */
+
+.second-page{
+    margin-top: 25rem;
+    padding-left: 20rem;
+}
+
+.s-page-content{
+    width: 45rem;
+}
+
+.s-page-content .content-p{
+    width: 30rem;
+}
+
+.s-page-content .title{
+    font-size: 4.5rem;
+    color: var(--textcolor);
+    font-weight: 700;
+    letter-spacing: normal;
+}
+
+.s-page-content .title2{
+    font-size: 2.6rem;
+    color: var(--textcolor);
+    font-weight: 700;
+    letter-spacing: normal;
+}
+
+.s-page-content p{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--textcolor);
+    line-height: 2.2rem;
+}
+
+.s-page .s-page-image{
+    max-width: 100%;
+    max-height: auto;
+    margin-top: 10rem;
+    margin-left: -60px;
+}
+
+.s-page .s-page-image img{
+    margin-left: 300px;
+}
+
+/* Second Page End */
+
+/* Third Page Start */
+
+.third-page{
+    padding-top: 8rem;
+}
+
+.third-page .title h2{
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--textcolor);
+}
+
+.third-page .title-mobile h2{
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--textcolor);
+}
+
+.container-box .box{
+    background-color:var(--grayboxcolor);
+    border-radius: 1rem;
+    width: 35rem;
+    height: 28rem;
+}
+
+.container-box .box:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: 0.3s ease;
+}
+
+.container-box .box:hover .box-head img{
+    transform: scale(1.1);
+    transition: 0.6s ease;
+}
+
+.container-box .box .box-head{
+    margin-left: 2.7rem;
+    padding-top: 2rem;
+}
+
+
+.container-box .box-content{
+    margin-top: 3rem;
+    margin-left: 4rem;
+}
+
+.container-box .box-content h5{
+    font-size: 2rem;
+    /* margin-left: 2rem; */
+}
+
+.container-box .box-content p{
+    font-size: 1.2rem;
+    /* margin-left: 2rem; */
+    margin-top: 2rem;
+    width: 26rem;
+    color: gray;
+    line-height: 2.2rem;
+}
+
+/* Stage-2 Start */
+
+.stage-2{
+    padding-top: 10rem;
+}
+
+
+.stage-2 .stage-2-row img{
+    border-radius: 3rem;
+    width: 70%;
+    margin: auto;
+}
+
+.stage-2 .title-mobile .title2 h2{
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--textcolor);
+}
+
+.stage-2 .right-side h2{
+    font-size: 4.8rem;
+    color: var(--textcolor);
+    font-weight: 700;
+}
+
+.stage-2 .right-side h2 span{
+    color: var(--yellowcolor);
+}
+
+.stage-2 .right-side .content{
+    padding-top: 2rem;
+    width: 36rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--textcolor);
+    line-height: 2.2rem;
+}
+
+.stage-2 .right-side .content-responsive{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    color: var(--textcolor);
+    padding-top: 1rem;
+}
+
+/* Stage-2 End */
+
+/* Swiper Area Start */
+.swiper1{
+        width: 34.1rem;
+        height: 28rem;
+        border-radius: 1rem;
+        background-color: var(--grayboxcolor);
+}
+
+.swiper1 .box-header{
+    margin-left: 2.7rem;
+    margin-top: 2rem;
+}
+
+.swiper1 .box-header h5{
+    margin-left: 0.9rem;
+    font-size: 2rem;
+}
+
+.swiper1 .box-content{
+    margin-top: 3rem;
+    margin-left: 4rem;
+}
+
+.swiper1 .box-content p{
+    font-size: 1.2rem;
+    width: 24rem;
+    color: gray;
+    line-height: 2.2rem;
+}
+
+.swiper1 .swiper-button-next{
+    color:var(--textcolor);
+}
+
+.swiper1 .swiper-button-prev{
+    color: var(--textcolor);
+}
+
+/* Swiper Area End */
+
+/* Third Page End */
+
+/* FAQ Area Start */
+
+.faq{
+    padding-top: 10rem;
+}
+
+.faq .title h2{
+    font-size: 4.2rem;
+    font-weight: 700;
+    color: var(--textcolor);
+    margin-bottom: 3rem;
+}
+
+.faq .title2 h2{
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--textcolor);
+    margin-bottom: 3rem;
+}
+
+.accordion{
+    border-color: none!important;
+}
+
+.accordion-area .accordion{
+    background-color: unset!important;
+}
+
+.accordion-area .accordion-header{
+    /* width: 90%; */
+    width: 100%;
+    height: 6.75rem;
+    margin-left:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accordion-area .accordion-item{
+    background-color: var(--accordion);
+    border-radius: 6rem;
+    margin-bottom: 1rem;
+    border: none;
+    width: auto;
+}
+
+.accordion-area .accordion-button, .collapsed{
+    background-color: var(--accordion);
+    border-radius: 6rem;
+}
+
+.accordion-button.collapsed{
+    border-radius: 6rem;
+}
+
+.accordion-area .accordion-header .accordion-button{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--textcolor);
+    border-radius: 4rem;
+    height: 0;
+    width: 90%;
+    margin-left: -15px;
+}
+
+.accordion-area .acc-custom .accordion-header .accordion-button{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--textcolor);
+    border-radius: 4rem;
+    height: 0;
+}
+
+.accordion-area .accordion-body{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--textcolor);
+    margin-left: 30px;
+}
+
+
+    /* FAQ Area End */
+/* Body Section End */
+
+/*Footer Section Start */
+footer {
+    margin-top: -80px;
+}
+
+footer img{
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.key-button button{
+    position: absolute;
+    margin-top: -170px;
+    background-color: #f7ca0f;
+    width: 18rem;
+    height: 5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 30rem;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.2rem;
+    cursor: pointer;
+}
+
+.key-button button:hover{
+    background-color: var(--textcolor);
+    color: white;
+    border-color: white;
+    transition: 0.4s ease;
+}
+/* Footer Section End */
+
+
+/* Responsive Area*/
+
+@media (max-width: 992px){
+    .container-form{
+        margin: 0;
+    }
+    .stage-2 .left-side{
+        padding: 0;
+    }
+
+    h1{
+        padding-top: 3rem;
+    }
+
+}
+
+@media(min-width:1248px){
+    .container-box{
+        padding: 0 7%;
+    }
+
+    .main-container{
+        padding: 0 10%;
+    }
+
+}
+
+
+@media (max-width:510px ){
+
+    .logo img{
+        height: 6rem;
+    }
+
+    .header .menu .btn-menu{
+        font-size: 2.4rem;
+        margin-top: 0.2rem;
+    }
+
+   .header .btn-contact button{
+    display: inline-block;
+    background-color: #f7ca0f;
+    width: 9rem;
+    height: 3.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 30rem;
+    margin-top: -5px;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.2rem;
+    cursor: pointer;
+}
+    
+    .line-responsive .line{ 
+        display: none;
+    }
+
+    .main-container .title-mobile h1{
+        font-size: 3.2rem;
+        margin-top: 1rem;
+    }
+
+    .s-page{
+        margin-top:1rem;
+        
+    }
+
+    .s-page-content{
+        width: 30rem;
+    }
+
+    .s-page-content p{
+        width: 30rem;
+    }
+
+    .third-page .title-mobile h2{
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--textcolor);
+        width: 100%;
+    }
+
+    h1{
+        padding-top: 2rem;
+    }
+
+    .third-page{
+        padding-top: 3rem;
+    }
+
+    .stage-2{
+        margin-top: -80px;
+    }
+
+    .stage-2 .left-side img{
+        width:80%;
+    }
+
+    .stage-2 .content-responsive{
+        width: 30rem;
+    }
+
+    .faq{
+        margin-top: -50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .accordion-area{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35rem;
+    }
+
+    .container-box{
+        display: none;
+    }
+
+    footer img{
+        width: 80%;
+        margin-top: 2rem;
+    }
+
+    footer .key-button{
+        margin-top: 3rem;
+    }
+}
+
+@media(max-width:990px){
+    .image-left{
+        display: none;
+    }
+
+    .second-page{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media(max-width:767px){
+    .portfolio{
+        margin-left: 15%;
+    }
+
+}
+
+
+@media (min-width:510px){
+    .swiper1{
+        display: none;
+    }
+}
